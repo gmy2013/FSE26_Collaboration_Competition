@@ -1,0 +1,151 @@
+Interactive Mini-Games (20 Tasks)
+
+Flappy Bird Game: Write p5.js code for Flappy Bird where a yellow bird continuously flies between a series of green pipes. The bird flaps every time the user clicks the mouse. If it hits a pipe or falls to the ground, the game ends. The score increases with each pipe successfully passed.
+
+Multiplayer Snake: Develop a JavaScript game with real-time synchronization featuring two snakes (red/blue) competing for food. Implement collision detection between snakes, randomized food spawning, and score tracking for each player. Include latency compensation for network play.
+
+Physics Puzzle: Create a Unity game with destructible structures using Box2D physics. Implement trajectory prediction lines with adjustable power, star-based scoring for efficiency, and 30+ levels with increasing structural complexity.
+
+Dungeon Crawler: Build a PyGame RPG with procedurally generated levels using cellular automata. Include A* pathfinding for enemies, loot rarity system, and fog-of-war mechanics with torch radius illumination.
+
+Rhythm Dance Game: Develop a web-based rhythm game using Web Audio API. Implement beat-matching mechanics with ±50ms tolerance windows, keyboard-controlled avatar moves, and combo scoring synchronized to BPM.
+
+3D Maze Runner: Create a Three.js first-person maze with dynamic shadow mapping. Implement countdown timer scoring, texture-mapped obstacles, and checkpoint systems with auto-save functionality.
+
+Boid Flocking: Simulate evolutionary flocking behavior with genetic algorithms. Incorporate predator-prey dynamics, environmental obstacles with collision avoidance, and selection pressure based on survival time.
+
+Fractal Terrain: Build WebGL heightmap generator with Level-of-Detail optimization. Implement real-time erosion simulation controls including rainfall intensity and sediment deposition parameters.
+
+VR Puzzle Box: Develop WebXR environment with physics-based interactions using Cannon.js. Design multi-step mechanical puzzles requiring object manipulation, lever systems, and spatial reasoning.
+
+Neural Racer: Create TensorFlow.js autonomous racer using convolutional neural networks. Implement genetic algorithm for evolving driving strategies across procedurally generated tracks.
+
+Audio Visualizer: Design p5.js music-reactive artwork with FFT analysis. Synchronize particle systems to frequency bands, implement harmonic response algorithms, and provide microphone/web audio input options.
+
+Multi-Agent Hide&Seek: Implement adversarial search algorithms for hiding/seeking agents. Design reward systems balancing cooperative/competitive behaviors with dynamic environment modifications.
+
+Ecosystem Sim: Model L-system plant growth with resource competition algorithms. Simulate photosynthesis cycles, nutrient distribution through root networks, and seasonal environmental changes.
+
+Qubit Visualizer: Build interactive quantum gate simulator with Dirac notation display. Visualize superposition states through probability clouds and entanglement through correlated state animations.
+
+Procedural City: Generate infinite WebGL cities with zoning rules. Simulate traffic patterns using agent-based models, implement day/night cycles, and provide architectural style controls.
+
+AR Treasure Hunt: Create geolocation AR game with Mapbox integration. Design clue-based progression using QR code scanning, multiplayer interactions through shared world state, and geofenced challenges.
+
+Blockchain Pet: Develop browser-based Tamagotchi with Ethereum wallet integration. Implement feeding/breeding mechanics using smart contracts, genetic trait inheritance, and NFT-based accessories.
+
+Voice Platformer: Build speech-controlled platformer with Web Speech API. Implement phoneme recognition for jump/attack commands, voice pitch-based jump height, and noise-filtering algorithms.
+
+Dialogue System: Create NPC conversation engine with branching narratives. Integrate personality-based response generation using sentiment analysis, relationship tracking, and dynamic quest triggering.
+
+Style Battle: Develop real-time neural style transfer arena using ONNX models. Implement voting system for artistic outcomes, style blending controls, and time-limited creation challenges.
+
+Data Visualization & Dashboards (15 Tasks)
+
+Weather Dashboard: Create a Python program to develop an interactive weather dashboard using the OpenWeather API. The dashboard should display current conditions, a 5-day forecast, and allow users to search by city name. Visualizations must include temperature trends and humidity levels.
+
+Crypto Trader: Develop a real-time cryptocurrency trading dashboard using Plotly. Integrate WebSocket connections to exchanges for live price streaming. Display technical indicators (RSI, MACD, Bollinger Bands) on interactive candlestick charts. Implement strategy backtesting with adjustable parameters and performance metrics (Sharpe ratio, max drawdown).
+
+Disease Spread: Create an animated SIR epidemic model using D3.js. Implement adjustable parameters (R0, recovery rate) through interactive sliders. Visualize vaccination impact scenarios with comparative infection curves and herd immunity thresholds. Animate transmission networks using force-directed graphs.
+
+Celestial Tracker: Build a PyGame-based astronomy visualization tool. Predict and display eclipse paths using JPL Horizons API data. Render planetary alignments with accurate orbital mechanics. Include observational conditions (light pollution, visibility) for different locations.
+
+Supply Chain Monitor: Develop a geospatial logistics tracker with Leaflet.js. Visualize global shipment routes with color-coded delay indicators. Implement inventory level heatmaps across warehouses. Integrate anomaly detection for disruptions using historical lead time data.
+
+Sentiment Mapper: Create a real-time Twitter emotion heatmap using Mapbox. Implement VADER sentiment analysis with topic clustering (LDA algorithm). Visualize trend evolution through animated bubble charts and include influencer impact metrics.
+
+Genome Explorer: Build a Bokeh-based gene sequence analyzer. Visualize mutation hotspots through Manhattan plots and protein coding regions via exon-intron maps. Integrate BLAST alignment comparisons across species with conservation scoring.
+
+Quantum Simulator: Develop a Qiskit state visualizer with Bloch sphere animations. Implement quantum gate operation controls (Hadamard, CNOT) with real-time state updates. Visualize superposition and entanglement through probability distribution histograms.
+
+CNN Activation Atlas: Create an interactive convolutional neural network explorer. Visualize feature map evolution during training using dimensionality reduction (t-SNE). Implement layer-wise activation filtering and input perturbation sensitivity analysis.
+
+Portfolio Simulator: Build a Monte Carlo risk analysis dashboard with Plotly. Model black swan event impacts through stress testing scenarios. Visualize efficient frontiers with adjustable risk tolerance and include correlation heatmaps for asset classes.
+
+Traffic Flow: Develop an animated urban mobility simulator using SUMO data. Visualize congestion patterns through time-lapse heatmaps. Optimize traffic light timing via genetic algorithms and include emission level indicators.
+
+Climate Projector: Create an IPCC data visualization tool with HoloViews. Compare emission scenario outcomes through interactive choropleth maps. Animate sea-level rise projections and extreme weather frequency changes over decades.
+
+fMRI Explorer: Build a WebGL-based brain activity mapper. Implement tri-planar cross-sectional slicing (axial, sagittal, coronal). Visualize BOLD signal time series and functional connectivity matrices. Include atlas region labeling and statistical threshold controls.
+
+Market Equilibrium: Develop an interactive supply-demand model with Plotly. Simulate price elasticity effects through draggable curves. Visualize consumer/producer surplus changes and include policy intervention scenarios (taxes, subsidies).
+
+Particle Physics: Create a Three.js event display for collision visualization. Reconstruct particle tracks through helical trajectory rendering. Visualize calorimeter energy deposits with color-mapped intensity and implement jet clustering algorithms.
+
+Algorithmic Challenges (10 Tasks)
+
+Music Transcriber: Develop a system that transcribes audio recordings of musical performances into digital sheet music using pitch tracking and onset detection. Employ a neural network to identify notes and align timing via chromagram analysis.
+
+Theorem Prover: Implement a Coq plugin that automates mathematical proof generation for inductive theorems. Integrate symbolic rewriting strategies and counterexample-guided abstraction refinement.
+
+Protein Folder: Construct a structure prediction pipeline implementing gradient descent-based energy minimization. Optimize force field parameters for folding kinetics using molecular dynamics simulations.
+
+Quantum Chemistry: Develop a molecular orbital calculator employing Hartree-Fock methods with basis set superposition. Visualize electron density maps through isosurface rendering and orbital localization.
+
+Route Optimizer: Build a traffic-aware vehicle routing solver incorporating real-time congestion data. Predict ETAs using historical traffic patterns and stochastic time-dependent travel models.
+
+Math Olympiad Prover: Create a symbolic problem solver for IMO-level combinatorics challenges. Generate human-readable solution steps through constraint propagation and case-based reasoning.
+
+ML Defender: Design an adversarial attack detector employing gradient masking techniques. Implement certified robustness through randomized smoothing and Lipschitz continuity constraints.
+
+Trading Engine: Develop a backtesting system with order slippage modeling and transaction cost analysis. Optimize risk-reward ratios via Kelly criterion position sizing and volatility targeting.
+
+Privacy Synthesizer: Build a differential privacy implementation enforcing (ε, δ)-privacy guarantees. Balance data utility/anonymization through synthetic data generation with marginal distribution preservation.
+
+Dance Choreographer: Create a robotic motion planner ensuring biomechanical feasibility through joint torque constraints. Optimize energy-efficient movement trajectories using optimal control theory.
+
+Utility Applications (18 Tasks)
+
+Excel Data Processor: Write a Streamlit and Pandas-based program that allows users to upload an Excel file, visualize its contents, and interactively apply filters or summary statistics. The app should be lightweight, require no extra packages, and support clear and editable output formatting.
+
+Doc Version Control: Develop a Python tool using difflib and python-docx to track Microsoft Word document revisions. Implement visual diff highlighting with color-coded changes, version rollback functionality, and automated changelog generation in Markdown format.
+
+Meeting Transcriber: Create a Python application with AssemblyAI API integration that generates searchable meeting minutes from audio recordings. Implement speaker diarization with voiceprint identification, action item extraction using keyword spotting, and export to structured JSON/HTML formats.
+
+Accessibility Auditor: Build a Chrome extension using the Accessibility Insights engine that audits web pages against WCAG 2.2 criteria. Provide automatic remediation suggestions for violations, generate compliance scorecards, and export reports in EARL format.
+
+Smart Scheduler: Develop a Python-based meeting coordinator with Google Calendar API integration. Optimize scheduling across timezones using minimax conflict resolution, incorporate participant preference learning, and implement calendar conflict alerts with auto-rescheduling.
+
+Code Scanner: Create a static analysis tool using LibCST that detects OWASP Top 10 vulnerabilities in Python/JavaScript code. Implement taint tracking for injection flaws, generate remediation code snippets, and export results as SARIF reports.
+
+API Test Generator: Build a Python tool that parses Swagger/OpenAPI specifications to automatically generate Postman test collections. Cover edge cases through boundary value analysis, include authentication workflow tests, and generate test coverage metrics reports.
+
+Biometric Auth: Develop a multi-factor authentication system with OpenCV and PyAudio. Implement liveness detection through blink pattern analysis, voiceprint verification with spectral centroid comparison, and FIDO2-compliant security key support.
+
+Legal Clause Generator: Create a contract templating engine using spaCy NLP that ensures jurisdictional compliance. Implement clause validation against legal databases, version tracking with redline comparisons, and electronic signature integration via DocuSign API.
+
+IoT Manager: Build a Raspberry Pi dashboard with Flask and Matplotlib that visualizes sensor data streams. Implement threshold-based SMS/email alerts using Twilio API, support CSV/JSON data exports, and provide calibration tools for environmental sensors.
+
+Citation Formatter: Develop a Python tool using Zotero API that automatically formats bibliographies. Support APA/MLA/Chicago styles with jurisdiction-specific variations, implement source deduplication, and provide DOI validation for references.
+
+Smart Home Engine: Create a Node-RED alternative with Rasa NLP for voice-controlled automation. Implement conditional event triggers based on sensor patterns, energy usage optimization algorithms, and IFTTT-compatible webhook integrations.
+
+Resume Parser: Build a PDF/Word parser using spaCy NER that extracts structured candidate data. Implement skill-to-job matching with cosine similarity scoring, resume gap detection, and export to ATS-compatible XML formats.
+
+Financial Analyzer: Develop an SEC EDGAR processor with XBRL parsing capabilities. Automate financial ratio calculations (current ratio, ROE), perform YoY trend analysis, and generate valuation models with Monte Carlo simulations.
+
+Document Translator: Create a format-preserving translation tool using LibreOffice UNO API. Maintain original DOCX/PDF layouts during translation, implement glossary-based terminology consistency, and support bidirectional 50+ language pairs.
+
+Accessibility Fixer: Build an HTML/CSS remediation tool that auto-corrects WCAG violations. Implement color contrast optimization through CIELAB adjustments, ARIA attribute injection, and responsive layout repair with preserved design integrity.
+
+Unit Converter: Develop a context-aware conversion tool with Pint unit handling library. Handle compound unit transformations (e.g., kWh to BTU), implement dimensional analysis error checking, and provide industry-specific presets (chemical engineering, physics).
+
+Compliance Auditor: Create a checklist automation system for GDPR/HIPAA compliance. Implement risk scoring based on control gaps, generate remediation roadmaps with priority weighting, and maintain audit trails with tamper-evident blockchain logging.
+
+Creative Content Generators (7 Tasks)
+
+Press Release Generator: Create a Python tool that scrapes company updates from public APIs and social media feeds to generate personalized press releases in PDF format. Include options for tone, length, and export settings. Use the NYTimes API for content structuring.
+
+Comic Generation: Create a Python application that generates 3-panel comic strips based on an AI vs humans. The app should: Automatically generate short dialogues for each panel using preset templates or random combinations; Render each panel as an image with speech bubbles using basic drawing libraries; 
+Display the final comic strip in a simple GUI and allow saving as PNG.
+
+Film Scriptwriter: Build a Python tool that generates screenplay drafts from logline inputs. Implement: 1) Three-act structure enforcement with plot point generation at 25%/50%/75% marks; 2) Character dialogue generation maintaining consistent voice using sentiment analysis; 3) Industry-standard Fountain format export with PDF conversion options and revision tracking.
+
+Architecture Generator: Create a Python application that produces building blueprints from constraint inputs. Features: 1) Parametric design based on lot dimensions, zoning rules, and environmental factors; 2) Structural integrity validation using finite element analysis; 3) 2D/3D visualization with Plotly and AutoCAD DWG export including material schedules.
+
+Fashion Designer: Develop a Python tool that converts mood boards into clothing patterns. Implement: 1) Color/texture extraction from uploaded images using OpenCV; 2) Pattern generation with adjustable sizing (XS-XXL) and draping simulation; 3) Output sewing templates as PDF with grainline markings and SVG for digital cutters.
+
+Poetry Composer: Build a Python application that generates structured poetry. Features: 1) Enforce strict meter (iambic pentameter) and rhyme schemes; 2) Thematic coherence using word embedding associations; 3) Multiple format outputs (traditional stanzas, concrete poetry layouts) with typesetting controls.
+
+Album Cover Artist: Create a Python tool that generates cover art from audio analysis. Implement: 1) Audio feature extraction (BPM, spectral centroids) using LibROSA; 2) Style transfer combining genre-specific motifs with neural style transfer; 3) Print-ready 300dpi PNG/JPG exports with bleed areas and CMYK color profiles.
+
