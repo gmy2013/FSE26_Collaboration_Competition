@@ -1,21 +1,72 @@
-This repository implements the C3 framework, which integrates centralized auction-based collaboration and decentralized communication-aware competition to overcome the collaboration degeneration problem in multi-agent LLM systems, particularly in complex software development tasks.
+# C3: Centralized Auction + Decentralized Competition Framework for Multi-Agent LLM Collaboration
 
-In C3 folder:
+This repository implements the **C3 framework**, designed to overcome *collaboration degeneration* in multi-agent LLM systems, especially in complex software development tasks.
 
-auction.py contains the  AuctionCoordinator class used to evaluate and score agent proposals based on novelty, executability, and diversity. Also responsible for generating peer feedback.
+C3 synergistically integrates:
+- **Centralized Auction-based Collaboration** (CAB)
+- **Decentralized Communication-aware Competition** (DCC)
 
-agent.py defines the base Agent class and specialized roles (e.g., Architect, Engineer). Each agent can generate and refine proposals using OpenAI's Chat API. Includes utility computation based on LLM-assessed quality.
+Together, they enable both *structured coordination* and *adaptive refinement* in multi-agent environments.
 
-proposal_pool.py provides Proposal and ProposalPool classes to manage agent submissions and evaluation metadata. Used in scoring and refinement cycles.
+---
 
-sop_templates.py contains standardized SOP (Standard Operating Procedure) templates that define role-specific proposal formats and evaluation criteria.
+## 🔧 Key Features
 
-metrics.py implements offline quantitative metrics such as Task Ownership Entropy (TOE), Adaptation Responsiveness Rate (ARR), and Feedback Utilization Score (FUS) for evaluating inter-agent dynamics.
+- **Agent Roles**: Architect, Engineer, QA, etc., each powered by OpenAI Chat API.
+- **Auction Coordinator**: Scores proposals for novelty, feasibility, and diversity.
+- **Proposal Pool**: Manages multi-round proposal tracking and metadata.
+- **SOP Templates**: Role-specific formats and evaluation criteria.
+- **Offline Metrics**: Quantify agent dynamics with TOE, ARR, FUS.
+- **Baselines**: Naive competition and fully isolated agents for ablation studies.
 
-dcc.py implements the Decentralized Communication-aware Competition (DCC) mechanism. Agents iteratively observe and refine proposals until convergence. 
+---
 
-cab.py implements a multi-stage pipeline across Product Manager, Architect, Engineer, and QA Engineer agents. Proposals are generated, refined, and passed between roles in a structured pipeline. 
+## 📁 Folder Overview
 
-naive_isolated.py implements naive competition, where all agents generate proposals independently, followed by a centralized auction-style winner selection. No refinement or communication is involved and solated competition, where agents generate proposals in complete isolation without visibility, feedback, or scoring. Serves as a baseline for collaboration-free behavior.
+### `C3/`
 
-dataset: 70 tasks extended from SoftwareDev since it is not fully open-source.
+| File | Description |
+|------|-------------|
+| `agent.py` | Defines base `Agent` class and specialized roles. Agents generate and refine proposals with LLMs, compute utilities based on assessed quality. |
+| `auction.py` | Implements `AuctionCoordinator` for evaluating proposals (novelty, executability, diversity) and generating peer feedback. |
+| `proposal_pool.py` | Contains `Proposal` and `ProposalPool` classes for tracking agent submissions, history, and scoring metadata. |
+| `dcc.py` | Implements **Decentralized Communication-aware Competition (DCC)** — agents iteratively observe and refine proposals until convergence. |
+| `cab.py` | Implements **Centralized Auction-based Collaboration (CAB)** — proposals pass through structured roles (Product Manager → Architect → Engineer → QA). |
+| `naive_isolated.py` | Implements naive competition and isolated agents baseline. No communication or refinement is involved. Useful for studying collaboration absence. |
+| `sop_templates.py` | Defines **Standard Operating Procedure (SOP)** templates, guiding role-specific proposal formats and scoring rubrics. |
+| `metrics.py` | Offline evaluation metrics for inter-agent dynamics: <br> - `Task Ownership Entropy (TOE)` <br> - `Adaptation Responsiveness Rate (ARR)` <br> - `Feedback Utilization Score (FUS)` |
+
+---
+
+## 🧪 Dataset
+
+- **70 extended tasks** from [SoftwareDev benchmark](https://github.com/OpenAGI/SoftwareDev), adapted for internal use due to partial open-source limitations.
+
+Tasks include:
+- API design and implementation
+- Refactoring and debugging
+- Test generation
+- System architecture tasks
+
+---
+
+## 🧠 Motivation
+
+Large Language Models show promise in software engineering but face **collaboration degeneration** when scaled across roles. C3 addresses this by:
+- Coordinating via **auctions** that reward diverse and feasible ideas.
+- Encouraging communication-aware **competition** and refinement cycles.
+
+This allows agents to balance **alignment** and **autonomy** during development workflows.
+
+---
+
+## 📊 Evaluation Metrics
+
+| Metric | Description |
+|--------|-------------|
+| **TOE** | Measures distribution of contributions across agents. |
+| **ARR** | Tracks how quickly agents adapt to peer feedback. |
+| **FUS** | Quantifies how much feedback is effectively utilized in refinements. |
+
+---
+
